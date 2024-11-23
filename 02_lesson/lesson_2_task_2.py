@@ -1,5 +1,5 @@
 # Високосный год
-5
+
 def is_year_leap(year):
     if (year % 4) == 0:
         year_leap = True
