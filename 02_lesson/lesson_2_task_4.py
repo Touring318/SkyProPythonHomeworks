@@ -9,7 +9,8 @@ def fizz_buzz(n):
             print("Fizz")
         elif x % 5 == 0:
             print("Buzz")
-        else: print(x)
+        else:
+            print(x)
 
 
 n = int(input("Введите целое число: "))

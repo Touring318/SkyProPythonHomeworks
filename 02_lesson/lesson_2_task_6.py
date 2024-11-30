@@ -5,4 +5,3 @@ for x in range(0, len(lst)):
     if lst[x] <= 30:
         if lst[x] % 3 == 0:
             print(lst[x])
-
