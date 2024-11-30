@@ -7,7 +7,8 @@ def month_to_season(month_number):
         print("Весна")
     elif (6 <= month_number <= 8):
         print("Лето")
-    else: print("Осень")
+    else:
+        print("Осень")
 
 
 month_number = int(input("Введите номер месяца в году: "))
