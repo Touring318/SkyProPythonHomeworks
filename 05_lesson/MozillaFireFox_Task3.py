@@ -17,6 +17,6 @@ passwordInput = driver.find_element(By.CSS_SELECTOR, 'input#password')
 # Username Input
 usernameInput.send_keys("tomsmith")
 # Password Input
-passwordInput.send_keys("SuperSecretPasword!")
+passwordInput.send_keys("SuperSecretPassword!")
 # Submit LoginCredentials
 driver.find_element(By.CSS_SELECTOR, 'i.fa.fa-2x.fa-sign-in').click()

@@ -17,8 +17,7 @@ addButton.click()
 addButton.click()
 addButton.click()
 
-search_field = "button.added-manually"
-deleteButtons = driver.find_elements(By.CSS_SELECTOR, search_field)
+deleteButtons = driver.find_elements(By.CSS_SELECTOR, 'button.added-manually')
 print(len(deleteButtons))
 
 sleep(3)
