@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-waiter = WebDriverWait(driver,5)
+waiter = WebDriverWait(driver, 5)
 
 driver.get('http://uitestingplayground.com/textinput')
 newOnButtonText = 'SkyPro'
