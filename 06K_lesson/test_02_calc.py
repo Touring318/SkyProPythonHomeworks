@@ -1,19 +1,22 @@
 # Task2 - Calc
 
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+
 def test_02_sum():
 
-    from selenium import webdriver
-    from selenium.webdriver.chrome.service import Service as ChromeService
-    from webdriver_manager.chrome import ChromeDriverManager
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.support.ui import WebDriverWait
-    from selenium.webdriver.support import expected_conditions as EC
-
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    driver.implicitly_wait(5)
-    
-    driver.get('https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html')
-
+    driver = webdriver.Chrome(
+        service=ChromeService(ChromeDriverManager().install())
+    )
+    driver.implicitly_wait(4)
+    driver.get(
+        'https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html'
+    )
     # В поле ввода по локатору #delay ввести значение 45
     driver.find_element(By.CSS_SELECTOR, 'input#delay').clear()
     driver.find_element(By.CSS_SELECTOR, 'input#delay').send_keys('45')
